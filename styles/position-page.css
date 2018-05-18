@@ -1,1 +1,70 @@
+main {
+  padding-top: 90px;  /*why did this fix the problem with nav bar lowering?*/
+  min-width: 1000px;
+}
 
+nav {
+	background-color: grey;
+	height: 60px;
+	width: 100%;
+	position: fixed;
+}
+
+nav img {
+	height: 50px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 60px;
+	border-radius: 50%;
+	vertical-align: middle;
+	border: 1px solid black;
+}
+
+nav ul {
+	display: inline-block;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav li::after {
+	content: "|";
+	margin-left: 5px;
+}
+
+nav a:hover {
+	color: black;
+}
+
+body {
+	background: url(../images/outerspace_landscape.jpeg) no-repeat;
+	background-size: cover;
+}
+
+.box {
+	margin-top: 150px;
+	height: 300px;
+	width: 600px;
+	position: relative;
+	border: 10px dotted green;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.spacecat, .spacedog {
+	width: 200px;
+	height: 200px;
+	position: relative;
+}
+
+div img:nth-child(1) {
+	top: -90px;
+	left: -90px;
+}
+
+div img:nth-child(2) {
+	right: -235px;
+	bottom: -202px;
+}
